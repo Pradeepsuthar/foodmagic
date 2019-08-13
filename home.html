@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en-IN">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="images/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <title>Order food online from GITS&#39;s best food delivery service. Order from restaurants near you</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Custom JavaScript -->
+  <script src="js/index.js"></script>
+
+  <!-- Font & Icons-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body onload="foodmagicPreLoader()">
+
+        <div id="loader"></div>
+    
+  <!-- Navigation -->
+  <nav class="navbar navbar-drak bg-black shadow">
+    <a class="navbar-brand" href="#">
+      <img src="images/foodmagic-logo.png" width="200" height="40" alt="foodmagic" title="foodmagic">
+    </a>
+    <div class="justify-content-end d-block d-sm-none">
+      <h3 href="#nav" onclick="openNav()" style="color: #FFBE0D;cursor: pointer;"> &#9776;</h3>
+    </div>
+    <div class="d-none d-sm-block">
+      <ul class="nav justify-content-end" id="myTab" role="tablist">
+        <!-- <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#">terms & conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#">Help (faq's)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#">privacy policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="#">About Us</a>
+        </li> -->
+        
+        <!-- Optional -->
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#Login" id="#Login">Sign Up/Log In</a> -->
+          <button class="btn btn-primary menu-custom-btn" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
+            <button class="btn btn-primary menu-custom-btn mx-3" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+        </li>
+        <h3 href="#nav" onclick="openNav()" style="color: #FFBE0D;cursor: pointer;"> &#9776;</h3>
+      </ul>
+    </div>
+  </nav>
+  <!-- //Navigation -->
+
+  <!-- Side Navigation -->
+  <div id="mySidenav" class="sidenav text-center bg-jumbotron">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="nav-link text-uppercase my-4" href="#">Contact Us</a>
+    <a class="nav-link text-uppercase my-4" href="#">terms & conditions</a>
+    <a class="nav-link text-uppercase my-4" href="#">Help (faq's)</a>
+    <a class="nav-link text-uppercase my-4" href="#">privacy policy</a>
+    <a class="nav-link text-uppercase my-4" href="#">About Us</a>
+
+    <a class="nav-link text-uppercase my-3" href="#LogOut" id="#LogOut">Sign Up/Login</a>
+  </div>
+  <!-- Side Navigation -->
+
+  <!-- //Navigation -->
+
+
+
+
+      <div class="jumbotron jumbotron-fluid bg-jumbotron">
+        <div class="container my-5" style="position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%)">
+          <h2 class="text-center text-uppercase" style="font-size: 50px"><b>SIGNUP & order your favourite food on food<span style="color: #FFBE0D">magic</span></b></h2>
+          <p class="text-center" style="font-size: 25px;font-weight: bold;">This is our college mini project 2019.</p>
+
+          <div class="submit-btn text-center my-5">
+              <button class="btn btn-primary custom-btn btn-lg mx-2 my-2" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
+            <!-- <button class="btn btn-primary custom-btn btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Login</button> -->
+          </div>
+          
+          <!-- search-food -->
+          <!-- <div class="search-food">
+            <div class="search-bar">
+              <input class="search-input" type="text" placeholder="Type delivery location here...">
+            </div>
+          </div>
+          <div class="submit-btn text-center my-5">
+            <button class="btn btn-primary custom-btn btn-lg">FIND FOOD</button>
+          </div> -->
+        </div>
+      </div>
+    
+      <!-- Body Part -->
+      <section class="container-fluid">
+        <h2 class="text-left text-gray my-3">Collections</h2>
+        <!-- Product list -->
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-none d-md-block d-lg-block d-xl-block">
+            <div class="card p-4" style="height:80vh">
+              Filters
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+
+            <div class="card p-3 sticky-bg-color" style="width:100%;height:auto;">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                  <label for="search-location text-muted"><i class="fa fa-location-arrow"></i> Search Location</label>
+                  <input type="text" placeholder="Enter your location" class="input-filed">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                  <label for="search-food text-muted"><i class="fa fa-search"></i> Search your favourite food</label>
+                  <input type="text" placeholder="Search food" class="input-filed">
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-left my-3">Order food online in GITS</h3>
+
+            <div class="row p-3">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 p-2 m-0">
+                <div class="card product-card p-2" style="min-width: 100%;border: none;">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-2 text-center">
+                      <img src="images/pizza.jpg" class="card-img product-card-img" alt="...">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 p-3">
+                      <div class="card-body p-0 text-center text-sm-center text-md-left text-lg-left text-xl-left">
+                        <h4 class="card-title my-0">The Pizza Square <span><img src="images/non-vegetarian-mark.svg"
+                              alt="veg" style="height: 20px;height:20px"></span></h4>
+                        <span><small>Pizzas, Fast Food, Chinese</small></span>
+                        <p class="card-text"><i class="fa fa-map-pin fa-icon"></i> GT Central, Malviya Nagar, Jaipur</p>
+                        <!-- <span> Price : ₹ 300 for one </span> -->
+                        <span><small class="text-muted">Min ₹ 50 for two order. Up to 45 min</small></span><br>
+                        <span><small class="text-muted"> -- Accepts cash & online payments</small></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-0 text-right" style="border: 1px solid #FFBE0D">
+                    <span class="offers"><a href="#" style="color: #FFBE0D">15% off on all orders</a></span>
+                    <a href="restaurants-menu.html" target="_blank" class="btn custom-order-btn">Quick View <i
+                        class="fa fa-eye"></i></a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 p-2 m-0">
+                  <div class="card product-card p-2" style="min-width: 100%;border: none;">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-2 text-center">
+                        <img src="images/sweets.jpg" class="card-img product-card-img" alt="...">
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 p-3">
+                        <div class="card-body p-0 text-center text-sm-center text-md-left text-lg-left text-xl-left">
+                          <h4 class="card-title my-0">The Pizza Square <span><img src="images/vegetarian-mark.svg"
+                                alt="veg" style="height: 20px;height:20px"></span></h4>
+                          <span><small>Pizzas, Fast Food, Chinese</small></span>
+                          <p class="card-text"><i class="fa fa-map-pin fa-icon"></i> GT Central, Malviya Nagar, Jaipur</p>
+                          <!-- <span> Price : ₹ 300 for one </span> -->
+                          <span><small class="text-muted">Min ₹ 50 for two order. Up to 45 min</small></span><br>
+                          <span><small class="text-muted"> -- Accepts cash & online payments</small></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-0 text-right" style="border: 1px solid #FFBE0D">
+                      <span class="offers"><a href="#" style="color: #FFBE0D">15% off on all orders</a></span>
+                      <a href="restaurants-menu.html" target="_blank" class="btn custom-order-btn">Quick View <i
+                          class="fa fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <!--  -->
+            <!--  -->
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center my-5">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="false" title="Previous Page"><i
+                      class="fa fa-angle-left"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" title="Next Page"><i class="fa fa-angle-right"></i></a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- //Body Part -->
+
+
+
+<!-- Sign Up / Login -->
+
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color: #FFBE0D">&times;</span>
+          </button>
+        </div>
+        <!-- Sign Up -->
+        <div class="modal-body" id="registerForm" style="display: block">
+            <h3 class="modal-title text-center" style="color: #FFBE0D" id="exampleModalCenterTitle">Sign Up</h3><hr>
+            <form>
+                <div class="form-group">
+                  <input type="text" name="name" class="input-filed" id="name" aria-describedby="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" class="input-filed" pattern="[0-9]{4}[0-9]{2}[0-9]{4}" id="phone" placeholder="Mobile" title="Ex.: +91-9876543210" required>
+                </div>
+                <div class="form-group">
+                <input type="date" name="bday" id="bday" class="input-filed" title="Date of Birth">
+                </div>  
+                <div class="form-group">
+                    <input type="email" name="email" class="input-filed" id="email" aria-describedby="email" placeholder="Email Address" title="foodmagic@gmail.com" required>
+                  </div>
+                <div class="form-group">
+                  <input type="password" name="password" class="input-filed" id="pwd" placeholder="Password" title="Password should be strong." required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="cpassword" class="input-filed" id="cpwd" placeholder="Confrim Password">
+                  </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="terms&condition">
+                  <label class="form-check-label text-gray font-weight-bold" for="terms&condition">I agree to <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a>.</label>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn menu-custom-btn">Submit</button>
+                </div>
+                
+                <div class="text-center my-3">
+                    <span class="my-0">Already have an account?</span><a href="#" onclick="showLoginForm()"> Login</a><br>
+                    <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+        </div>
+
+        <!-- Login -->
+        <div class="modal-body" id="loginForm" style="display: none">
+            <h3 class="modal-title text-center" style="color: #FFBE0D" id="exampleModalCenterTitle">Login</h3><hr>
+            <form>
+                <div class="form-group">
+                  <input type="email" class="input-filed" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="input-filed" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label text-gray font-weight-bold" for="exampleCheck1">I agree to <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a>.</label>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn menu-custom-btn">Submit</button>
+                </div>
+                
+                <div class="text-center my-3">
+                    <span class="my-0">Don't have an account?</span><a href="#" onclick="showRegisterForm()"> Register</a><br>
+                    <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+        </div>
+
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn menu-custom-btn" data-dismiss="modal">Close</button>
+          <button type="button" class="btn menu-custom-btn">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<!-- //Sign Up / Login -->
+
+
+
+
+
+<!-- notification -->
+
+
+
+
+
+<!-- //notifications -->
+
+
+<!-- Footer -->
+  <section id="footer">
+    <div class="text-center my-3">
+      <img src="images/logog.png" width="250px" height="90px" alt="">
+    </div>
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5 class="text-white">For Restaurants </h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Add a Restaurant</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Business Owner Guidelines</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Products for Businesses</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>How to become our Partner</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5 class="text-white">About FOODMAGIC</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>CONTACT US</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>HELP (FAQ'S)</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>ABOUT US</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>PRIVACY POLICY</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>TERMS & CONDITIONS</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5 class="text-white">Available for</h5>
+          <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Dabok</a></li>   
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <h4 class="text-center text-white">SOCIAL LINKS</h4><hr style="background-color:gray">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
+          <!-- <p class="text-gray"><u><a href="https://www.nationaltransaction.com/">National Transaction
+                Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S.
+            Bancorp, Minneapolis, MN]</p> -->
+          <p class="h6 text-gray" >Copyright &copy; 2019-2020 <a class="text-white ml-2" href="#" target="_blank">foodmagic</a> All Rights Reserved.</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <!-- //Footer -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
